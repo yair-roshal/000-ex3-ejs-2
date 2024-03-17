@@ -1,3 +1,61 @@
+<%= console.log('i :>> ', i) %>
+
+
+const folderPath = path.join(__dirname, "private", id, "reviews")
+const allData = []
+
+async function readAllFiles() {
+  try {
+    const files = await fs.readdir(folderPath)
+
+    for (const file of files) {
+      const filePath = path.join(folderPath, file)
+      const data = await fs.readFile(filePath, "utf8")
+      allData.push(data)
+    }
+
+    return allData.join("\n") // Объединяем все данные в одну строку с разделителем
+  } catch (err) {
+    console.error("Ошибка чтения файлов:", err)
+    return null
+  }
+}
+
+readAllFiles()
+  .then((allData) => {
+    console.log(allData) // Все данные из всех файлов объединены в одну переменную
+  })
+  .catch((err) => {
+    console.error("Ошибка:", err)
+  })
+  
+_______________-
+
+<% for(var i=0; i<bioDataArray.length-1;i=i+2) {%>
+    <div class="text2">
+        
+        <p class="inner"><%= bioDataArray[i] %></p>
+        <%= console.log('i :>> ', i) %>
+        <p class="inner">
+            <%= bioDataArray[i+1] %>
+        </p>
+      </div>
+    
+<%} %>
+        
+        
+<% let currentParagraph = ''; %>
+
+<% bioDataArray.forEach(item => { %>
+  <% if (item === '') { %>
+    <%= currentParagraph %>
+    <% currentParagraph = ''; %>
+  <% } else { %>
+    <% currentParagraph += item + ' '; %>
+  <% } %>
+<% }); %>
+
+
         <section>
             <h2>Отзывы</h2>
             <% reviewsData.forEach(review => { %>
@@ -7,3 +65,10 @@
                 </div>
             <% }); %>
         </section>
+        
+        
+        
+      
+        
+        
+        

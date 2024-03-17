@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= titleData %></title>
+    <title>My Profile</title>
     <link href="profile.css" rel="stylesheet" type="text/css" />
     <link href="/public/profile.css" rel="stylesheet" type="text/css" />
     <link href="public/profile.css" rel="stylesheet" type="text/css" />
@@ -26,12 +26,22 @@
         </div>
       </div>
 
+      <h1 class="title"><%= title %></h1>
+
       <div class="text">
         <div class="text1">
           <p><%= titleData %></p>
-          <div class="text2">
-            <p><%= bioData %></p>
-          </div>
+		   
+		  <% for(var i=0; i<bioDataArray.length-1;i=i+2) {%>
+			<div class="text2"> 
+				<p class="inner"><%= bioDataArray[i] %></p>
+ 				<p class="inner">
+					<%= bioDataArray[i+1] %>
+				</p>
+			  </div>
+			
+		<%} %>
+		
           <div class="Yael">
             <img src="/<%= id %>/profile1.png" alt="profile1" />
           </div>
@@ -41,6 +51,8 @@
       <div class="box1">
         <div class="box2">
           <h2>Endorsement</h2>
+		  
+		  
           <div class="box5">
             <p>
               I remember the first time I met Mickey the Debug Dog. Mickey
@@ -52,31 +64,23 @@
             <hr class="line" />
             <span class="italic">Sofia H, AP CS student.</span>
           </div>
-          <div class="box5">
-            <p>Mickey KNOWS THE WAE Mickey</p>
-            <hr class="line" />
-            <span class="italic"
-              >Manesh J, Software Engineer, Imaginarium.</span
-            >
-          </div>
-          <div class="box5">
-            <p>
-              Mickey has been an amazing help to me, someone who listens to
-              every problem and is never judgemental.
-            </p>
-            <hr class="line" />
-            <span class="italic">Chris L, Programming Club Participant.</span>
-          </div>
-          <div class="box5">
-            <p>AMickey your own endorsement here!</p>
-            <hr class="line" />
-            <span class="italic"> Alaa Zoubi, Student </span>
-          </div>
-          <div class="box5">
-            <p>AMickey your friend's endorsement here!</p>
-            <hr class="line" />
-            <span class="italic"> Yael Zakaria ,Student </span>
-          </div>
+		  
+	 
+		  <%= console.log('reviewsData :>> ', reviewsData) %>
+
+		  <% for(var i=0; i<reviewsData.length-1;i=i+2) {%>
+		  
+			  <div class="box5">
+				<p>
+					<%= reviewsData[i] %>
+				</p>
+				<hr class="line" />
+				<span class="italic"><%= reviewsData[i+1] %></span>
+			  </div>
+			  
+		<%} %>
+
+		  
         </div>
         <div class="box3">
           <img src="/<%= id %>/profile2.png" alt="profile2" class="DOG1" />
