@@ -10,6 +10,11 @@ const PORT = 3000
 app.set("view engine", "ejs")
 app.set("views", path.join(__dirname, "/views"))
 app.use(express.static(__dirname + "/public"))
+
+app.get("/", function (req, res) {
+  res.render("layout", {})
+})
+
 app.get("/profile", function (req, res) {
   let id = req.query.id
 
