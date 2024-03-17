@@ -37,8 +37,8 @@ app.get("/profile", function (req, res) {
 
   fs.readdir(folderPath, (err, files) => {
     if (err) {
-      console.error("Ошибка чтения папки:", err)
-      return res.status(500).send("Ошибка чтения папки")
+      console.error("Error reading folder:", err)
+      return res.status(500).send("Error reading folder")
     }
 
     files.forEach((file) => {
@@ -69,8 +69,8 @@ app.get("/profile", function (req, res) {
         })
       })
       .catch((error) => {
-        console.error("Ошибка при чтении файлов:", error)
-        res.status(500).send("Ошибка при чтении файлов")
+        console.error("Error reading files:", error)
+        res.status(500).send("Error reading files")
       })
   })
 })
