@@ -1,0 +1,139 @@
+body {
+    background-image: url('background.jpg');
+    background-attachment: fixed;
+    width: 80%;
+    font-family: 'Serif Bree', serif;
+    margin: 0 auto;
+    padding: 0.3% 0;
+    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.2);
+}
+.Alaa {
+   background-color: white;
+}
+.one{
+    height: 350px;
+    background: url('banner.png') no-repeat;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+.two{
+    position: relative;
+    top: 70%;
+    left: -2%;
+}
+.dog {
+    border: 10px solid #fff;
+    border-radius: 200px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+h1{
+        font-size: 3vw;
+        font-family: 'Rammetto One' ,Cursive;
+        padding-top: 10px;
+        border-radius: 1px;
+        text-align: center;
+        background-color: white;
+}
+.title{
+    text-shadow: 0px 3px 3px #999999;
+}
+.text{
+    display: grid;
+    padding: 2% 5% 2% 5%;
+    font-family: "Bree Serif", serif;
+    grid-template-columns: auto 0 auto auto ;
+}
+.text2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+.Yael{ 
+    width: 30vw;
+    max-height: 600px;
+    object-fit: cover;
+    min-width: 400px;
+    object-position:  right bottom;
+    margin: auto;
+}
+.box1{
+    background: url('clouds.webp');
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.box2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box5 {
+    font-family: "Bree Serif", serif;
+    border-left: 10px solid #cccaca;
+    background-color: #ffffff;
+    padding-bottom: 15px;
+    margin: 10px 0;
+    text-align: center;
+    padding-left: 15px;
+    width: 90%;
+    padding-left: 15px;
+}
+.box2 h2{
+    font-family: 'Rammetto One' ,Cursive;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 2.5vw;
+}
+.line{
+    width: 40%;
+}
+.box3{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: end;
+}
+.italic{
+    font-style: italic;
+}
+.DOG1{
+    object-position: center;
+}
+.pic h2{
+    font-size: 2.5vw;
+    font-family: 'Rammetto One' ,Cursive;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+.pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.friend{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+.friend img {
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    object-fit: cover;
+}
+.zefat{
+    background-color: #5f5b5b;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}

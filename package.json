@@ -1,0 +1,17 @@
+{
+  "name": "node-ejs-project",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start_profile": "set DEBUG=ourApp & nodemon profile.js",
+    "lint": "eslint ex.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "nodemon": "^2.0.3"
+  },
+  "description": "ejs project"
+}

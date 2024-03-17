@@ -1,0 +1,8 @@
+Mickey the Debug Dog
+Many a programmer have heard of Rubber Duck Debugging.
+But they do not know the invincible power of a Debug Dog.
+
+Dogs are known in many cultures as men and women's best
+friends. Most cultures rate these mythical creatures as above
+average intelligence, making them especially good at helping
+to debug those tough problems in your code.

@@ -1,0 +1,9 @@
+        <section>
+            <h2>Отзывы</h2>
+            <% reviewsData.forEach(review => { %>
+                <div class="review">
+                    <p><%= review.text %></p>
+                    <p><strong>Автор:</strong> <%= review.author %></p>
+                </div>
+            <% }); %>
+        </section>
